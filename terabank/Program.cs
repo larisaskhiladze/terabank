@@ -14,6 +14,7 @@ class MyHomeWork3
         int Z = Int32.Parse(Console.ReadLine());
 
         int sum = X + (Y * Z);
+
         Console.WriteLine("answer is: " +  sum);
 
         // Homework3-2
@@ -36,14 +37,16 @@ class MyHomeWork3
 
         //homework3-3
 
-        Console.Write("please enter your weight:");
+        Console.Write("please enter your Weight:");
         decimal Weight = decimal.Parse(Console.ReadLine());
 
-        Console.Write("please enter your height:");
+        Console.Write("please enter your Height:");
         decimal Height = decimal.Parse(Console.ReadLine());
 
-        decimal BMI = weight / (height * height);
-        Console.WriteLine("your BMI is: decimal BMI");
+        decimal BMI = Weight / ((Height/100) * (Height/100));
+        Console.WriteLine("your BMI is: decimal" + BMI);
+
+        Console.ReadLine();
 
 
         //homework3-4
