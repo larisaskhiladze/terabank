@@ -1,67 +1,104 @@
 ﻿using System;
-
-class MyHomeWork3
+class HomeWork4
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("please enter number X: ");
-        int X = Int32.Parse(Console.ReadLine());
-
-        Console.WriteLine("please enter number Y: ");
-        int Y = Int32.Parse(Console.ReadLine());
-
-        Console.WriteLine("please enter number Z: ");
-        int Z = Int32.Parse(Console.ReadLine());
-
-        int sum = X + (Y * Z);
-
-        Console.WriteLine("answer is: " +  sum);
-
-        // Homework3-2
-
-        Console.Write("please enter your name: ");
         Console.ReadLine();
+    }
+    //Davaleba1
+    static int getSum(int x, int y)
+    { 
+        return x + y;
+    }
 
-        Console.Write("please enter your surname: ");
-        Console.ReadLine();
+    // Davaleba2
 
-        Console.Write("please enter your age: ");
-        int age = Int32.Parse(Console.ReadLine());
+    static void GetParms()
+    { 
 
-        Console.Write("please enter your weight:");
-        decimal weight = decimal.Parse(Console.ReadLine());
+    Console.WriteLine("enter Num1:");
+    decimal Num1 = decimal.Parse(Console.ReadLine());
 
-        Console.Write("please enter your height:");
-        decimal height = decimal.Parse(Console.ReadLine());
+    Console.WriteLine("enter Num2:");
+    decimal Num2 = decimal.Parse(Console.ReadLine());
+
+    Console.WriteLine("enter Num3:");
+    decimal Num3 = decimal.Parse(Console.ReadLine());
+
+    Console.WriteLine("enter Num4:");
+    decimal Num4 = decimal.Parse(Console.ReadLine());
+
+     
+        if (Num1 <= Num2 && Num1 <= Num3 && Num1 <= Num4)
+        {
+            Console.WriteLine("The Smallest Number is: " + Num1);
+        }
+        else if (Num2 <= Num1 && Num2 <= Num3 && Num2 <= Num4)
+        {
+            Console.WriteLine("The Smallest Number is: " + Num2);
+        }
+        else if (Num3 <= Num1 && Num3 <= Num2 && Num3 <= Num4)
+        {
+            Console.WriteLine("The Smallest Number is:" + Num3);
+        }
+        else if (Num4 <= Num1 && Num4 <= Num2 && Num4 <=Num3)
+        {
+            Console.WriteLine("The Smallest Number is:" + Num4);
+        }
+        else
+        {
+            Console.WriteLine("These Numbers is equal");
+        }
+
+        if (Num1 >= Num2 && Num1 >= Num3 && Num1 >= Num4)
+        {
+            Console.WriteLine("The Largest Number is: " + Num1);
+        }
+        else if (Num2 >= Num1 && Num2 >= Num3 && Num2 >= Num4)
+        {
+            Console.WriteLine("The Largest Number is: " + Num2);
+        }
+        else if (Num3 >= Num1 && Num3 >= Num2 && Num3 >= Num4)
+        {
+            Console.WriteLine("The Largest Number is:" + Num3);
+        }
+        else if (Num4 >= Num1 && Num4 >= Num2 && Num4 >= Num3)
+        {
+            Console.WriteLine("The Largest Number is:" + Num4);
+        }
+        
+    }
 
 
-        //homework3-3
+    // davaleba3
 
-        Console.Write("please enter your Weight:");
-        decimal Weight = decimal.Parse(Console.ReadLine());
+    static void getParms()
+    {
+        Console.WriteLine("enter folowing fruits:");
+        Console.Write("apple, watermelon, melon, cherry, strawberry");
+        string fruits = Console.ReadLine();
 
-        Console.Write("please enter your Height:");
-        decimal Height = decimal.Parse(Console.ReadLine());
-
-        decimal BMI = Weight / ((Height/100) * (Height/100));
-        Console.WriteLine("your BMI is: decimal" + BMI);
-
-        Console.ReadLine();
-
-
-        //homework3-4
-
-        Console.WriteLine("   |   |   ");
-        Console.WriteLine(" 1 | 2 | 3 ");
-        Console.WriteLine("___|___|___");
-        Console.WriteLine("   |   |   ");
-        Console.WriteLine(" 4 | 5 | 6 ");
-        Console.WriteLine("___|___|___");
-        Console.WriteLine("   |   |   ");
-        Console.WriteLine(" 7 | 8 | 9 ");
-        Console.WriteLine("   |   |   ");
-
-
+        switch (fruits)
+        {
+            case "apple":
+                Console.WriteLine("your entered fruit is apple");
+                break;
+            case "watermelon":
+                Console.WriteLine("your entered fruit is watermelon");
+                break;
+            case "melon":
+                Console.WriteLine("your entered fruit is melon");
+                break;
+            case "cherry":
+                Console.WriteLine("your entered fruit is cherry");
+                break;
+            case "strawberry":
+                Console.WriteLine("your entered fruit is strawberry");
+                break;
+            default:
+                    Console.WriteLine("your entered fruit is wrong");
+                break;
+        }
     }
 }
 
