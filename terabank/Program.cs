@@ -1,5 +1,4 @@
 ﻿using System;
-﻿
 class HomeWork4
 {
     static void Main(string[] args)
@@ -17,7 +16,6 @@ class HomeWork4
     static void GetParms()
     { 
 
-
     Console.WriteLine("enter Num1:");
     decimal Num1 = decimal.Parse(Console.ReadLine());
 
@@ -30,8 +28,7 @@ class HomeWork4
     Console.WriteLine("enter Num4:");
     decimal Num4 = decimal.Parse(Console.ReadLine());
 
-   
-  
+     
         if (Num1 <= Num2 && Num1 <= Num3 && Num1 <= Num4)
         {
             Console.WriteLine("The Smallest Number is: " + Num1);
